@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyWeatherApp</string>
+    <string name="api_key">8887e1c31f3251430bf8523f2647c959</string>
+    <string name="city_name">Bangalore,karnataka</string>
+    <string name="metrics">metric</string>
+    <string name="min_temp">Min Temp:</string>
+    <string name="max_temp">Max Temp:</string>
+    <string name="unit">°C</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="updated_text">Updated at:</string>
+</resources>
