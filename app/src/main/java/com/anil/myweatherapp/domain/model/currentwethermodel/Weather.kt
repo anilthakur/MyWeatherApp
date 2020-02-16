@@ -1,9 +1,6 @@
 package com.anil.myweatherapp.domain.model.currentwethermodel
 
-//import androidx.room.Entity
-//import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
-//@Entity(tableName = "Weather")
 data class Weather(
 
     @field:SerializedName("visibility")
@@ -28,15 +25,14 @@ data class Weather(
 	val coord: Coord? = null,
 
     @field:SerializedName("weather")
-	val weather: List<WeatherItem?>? = null,
+    var weather: List<WeatherItem?>? = null,
 
     @field:SerializedName("name")
-	val name: String? = null,
+    var name: String? = null,
 
     @field:SerializedName("cod")
 	val cod: Int? = null,
 
-//	@PrimaryKey
     @field:SerializedName("id")
 	val id: Int? = null,
 

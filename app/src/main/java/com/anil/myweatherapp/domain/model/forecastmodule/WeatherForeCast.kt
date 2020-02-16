@@ -7,13 +7,13 @@ import com.google.gson.annotations.SerializedName
 data class WeatherForeCast(
 
 	@field:SerializedName("city")
-	val city: City? = null,
+	var city: City? = null,
 
 	@field:SerializedName("cnt")
 	val cnt: Int? = null,
 
 	@field:SerializedName("cod")
-	val cod: String? = null,
+	var cod: String? = null,
 
 	@field:SerializedName("message")
 	val message: Int? = null,
