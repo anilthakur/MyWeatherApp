@@ -84,6 +84,14 @@ dependencies {
     // For espresso web view testcases
     androidTestImplementation 'com.android.support.test.espresso:espresso-web:3.0.2'
 
+    debugImplementation group: "org.mockito", name: "mockito-core", version: rootProject.mockitoVersion
+    testImplementation group: "org.mockito", name: "mockito-core", version: rootProject.mockitoVersion
+    testImplementation 'org.mockito:mockito-inline:3.2.0'
+    // hemcrest
+    androidTestImplementation group: "org.hamcrest", name: "hamcrest-library", version: rootProject.hamcrestVersion
+    debugImplementation group: "org.hamcrest", name: "hamcrest-library", version: rootProject.hamcrestVersion
+
+    testImplementation 'android.arch.core:core-testing:1.1.0'
     androidTestImplementation ('com.android.support.test.espresso:espresso-contrib:2.0') {
         exclude group: 'com.android.support', module: 'appcompat'
         exclude group: 'com.android.support', module: 'support-v4'

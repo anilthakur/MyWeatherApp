@@ -42,7 +42,7 @@ class MainActivityTest {
             .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
 
 
-        Espresso.onView(ViewMatchers.withId(R.id.temp))
+        Espresso.onView(ViewMatchers.withId(R.id.temp_textview))
             .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
 
 
