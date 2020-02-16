@@ -2,7 +2,6 @@ package com.android.artgallery.data.source.remote
 
 import com.anil.myweatherapp.domain.model.currentwethermodel.Weather
 import com.anil.myweatherapp.domain.model.forecastmodule.WeatherForeCast
-import io.reactivex.Observable
 import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Query

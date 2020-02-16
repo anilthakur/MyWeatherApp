@@ -7,19 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c40b143-5719-4bfe-b0b5-b90b63dbb004" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_4_atlassian_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_4_atlassian_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/anil/myweatherapp/Weather_ForeCast_Test.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/anil/myweatherapp/domain/model/currentwethermodel/Weather.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/anil/myweatherapp/domain/model/currentwethermodel/Weather.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/anil/myweatherapp/domain/model/currentwethermodel/WeatherItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/anil/myweatherapp/domain/model/currentwethermodel/WeatherItem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/anil/myweatherapp/domain/model/forecastmodule/WeatherForeCast.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/anil/myweatherapp/domain/model/forecastmodule/WeatherForeCast.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/anil/myweatherapp/WeatherModel_Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/anil/myweatherapp/WeatherModel_Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -234,7 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.myweatherapp in app">
+  <component name="RunManager" selected="Android App.app">
     <configuration name="WeatherModel_Test" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
@@ -406,13 +399,17 @@
       <option name="project" value="LOCAL" />
       <updated>1581838470157</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- added hemcreast">
+      <created>1581839942264</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581839942264</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WeatherRepo_Test - 2020.02.16 at 12h 58m 24s.xml">
-      <configuration name="WeatherRepo_Test" configurationId="AndroidJUnit" />
-    </history-entry>
     <history-entry file="WeatherModel_Test_returnValue_GetSchemeId - 2020.02.16 at 13h 11m 59s.xml">
       <configuration name="WeatherModel_Test.returnValue_GetSchemeId" configurationId="AndroidJUnit" />
     </history-entry>
@@ -440,12 +437,15 @@
     <history-entry file="myweatherapp_in_app - 2020.02.16 at 13h 26m 58s.xml">
       <configuration name="myweatherapp in app" configurationId="AndroidJUnit" />
     </history-entry>
+    <history-entry file="myweatherapp_in_app - 2020.02.16 at 13h 29m 08s.xml">
+      <configuration name="myweatherapp in app" configurationId="AndroidJUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="974" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32967034" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.32967034" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -453,7 +453,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Resources Explorer" order="7" weight="0.32967034" />
       <window_info id="Favorites" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Run" visible="true" weight="0.32993197" />
+      <window_info active="true" anchor="bottom" id="Run" visible="true" weight="0.32993197" />
       <window_info anchor="bottom" id="Logcat" />
       <window_info anchor="bottom" id="Android Profiler" />
       <window_info anchor="bottom" id="Debug" weight="0.32993197" />
@@ -475,7 +475,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- refactor code add unit test" />
     <MESSAGE value="- added mockito test" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added mockito test" />
+    <MESSAGE value="- added hemcreast" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added hemcreast" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MyWeatherApp$WeeatherViewModel_Test.ic" NAME="WeeatherViewModel_Test Coverage Results" MODIFIED="1581838090106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

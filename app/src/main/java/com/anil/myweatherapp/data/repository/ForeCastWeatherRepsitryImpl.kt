@@ -9,8 +9,6 @@ import io.reactivex.Single
  * Created by Anil Kumar on 2020-02-15
  */
 class ForeCastWeatherRepsitryImpl(
-//    private val database: AppDatabase,
-
     private val retrofitService: RetrofitService
 ) : WeatherForeCastRepository {
     override fun getWeatherForeCast(
