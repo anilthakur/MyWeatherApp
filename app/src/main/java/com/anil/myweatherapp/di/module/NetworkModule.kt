@@ -8,6 +8,7 @@ import com.android.artgallery.data.repository.WeatherRepisitoryImp
 import com.android.artgallery.data.source.remote.RetrofitService
 import com.android.artgallery.util.Constants.BASE_URL
 import com.anil.myweatherapp.data.repository.ForeCastWeatherRepsitryImpl
+import com.anil.myweatherapp.data.source.local.AppDataBase
 import com.anil.myweatherapp.domain.usecase.forecastweatheer.WeatherForeCastRepository
 import com.anil.myweatherapp.domain.usecase.currentweather.WeatherRepository
 import com.google.gson.Gson
@@ -108,16 +109,23 @@ class NetworkModule {
         return retrofit.create(RetrofitService::class.java)
     }
 
-    @Singleton
-    @Provides
-    fun provideWeatherRepository(
-                                 retrofitService: RetrofitService): WeatherRepository {
-        return WeatherRepisitoryImp(retrofitService)
-    }
+//    @Singleton
+//    @Provides
+//    fun provideWeatherRepository(
+//                                 retrofitService: RetrofitService): WeatherRepository {
+//        return WeatherRepisitoryImp(retrofitService)
+//    }
     @Singleton
     @Provides
     fun provideWeatherForecastRepository(
         retrofitService: RetrofitService): WeatherForeCastRepository {
         return ForeCastWeatherRepsitryImpl(retrofitService)
+    }
+
+    @Singleton
+    @Provides
+    fun providePhotoRepository(appDatabase: AppDataBase,
+                               retrofitService: RetrofitService): WeatherRepository {
+        return WeatherRepisitoryImp(appDatabase,retrofitService)
     }
 }

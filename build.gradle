@@ -16,7 +16,7 @@ buildscript {
     ext.room_version = "1.1.1"
     ext.mockitoVersion = '2.10.0'
     ext.hamcrestVersion='1.4-atlassian-1'
-
+    ext.roomVersion = '2.2.2'
     repositories {
         google()
         jcenter()

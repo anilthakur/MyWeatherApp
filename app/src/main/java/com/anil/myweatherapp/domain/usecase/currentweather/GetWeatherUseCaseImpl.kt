@@ -8,19 +8,25 @@ import javax.inject.Inject
 /**
  * Created by Anil Kumar on 2020-02-15
  */
-class GetWeatherUseCaseImpl @Inject constructor(private val repository: WeatherRepository) : SingleUseCase<Weather>()  {
+class GetWeatherUseCaseImpl @Inject constructor(private val repository: WeatherRepository) :
+    SingleUseCase<Weather>() {
 
     private var location: String? = null
     private var unit: String? = null
     private var appId: String? = null
 
-    fun callmethod(location: String,unit: String,appId: String) {
+    fun callmethod(location: String, unit: String, appId: String) {
         this.location = location
         this.unit = unit
         this.appId = appId
     }
 
     override fun buildUseCaseSingle(): Single<Weather> {
-        return repository.getWeather(location!!,unit!!,appId!!)
+        return repository.getWeather(location!!, unit!!, appId!!)
     }
+
+
+
+
+
 }

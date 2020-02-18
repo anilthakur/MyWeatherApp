@@ -11,7 +11,10 @@ import javax.inject.Inject
 /**
  * Created by Anil Kumar on 2020-02-15
  */
-class WeatherViewModel @Inject constructor(private val getWeatherUseCaseImpl: GetWeatherUseCaseImpl,private  val  getWeatherForeCastImpl: GetWeatherForeCastImpl) :
+class WeatherViewModel @Inject constructor(
+    private val getWeatherUseCaseImpl: GetWeatherUseCaseImpl,
+    private val getWeatherForeCastImpl: GetWeatherForeCastImpl
+) :
     ViewModel() {
 
     private val TAG = WeatherViewModel::class.java.simpleName
@@ -39,7 +42,8 @@ class WeatherViewModel @Inject constructor(private val getWeatherUseCaseImpl: Ge
             }
         )
     }
-    fun loadForeCastWeather(location: String, unit: String, appId: String){
+
+    fun loadForeCastWeather(location: String, unit: String, appId: String) {
         getWeatherForeCastImpl.callmethod(location, unit, appId)
         getWeatherForeCastImpl.execute(
             onSuccess = {
@@ -51,5 +55,12 @@ class WeatherViewModel @Inject constructor(private val getWeatherUseCaseImpl: Ge
                 isError.value = true
             }
         )
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        weatherLiveData.value = null
+
+        getWeatherUseCaseImpl.dispose()
     }
 }

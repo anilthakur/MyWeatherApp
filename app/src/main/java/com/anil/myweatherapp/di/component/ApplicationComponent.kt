@@ -3,6 +3,7 @@ package com.android.artgallery.di.component
 import android.app.Application
 import com.android.artgallery.di.module.*
 import com.anil.myweatherapp.MainApplication
+import com.anil.myweatherapp.di.module.DatabaseModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -16,8 +17,7 @@ import javax.inject.Singleton
         AndroidInjectionModule::class,
         ApplicationModule::class,
         ActivityModule::class,
-
-
+        DatabaseModule::class,
         NetworkModule::class
     ]
 )

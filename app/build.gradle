@@ -90,6 +90,12 @@ dependencies {
     // hemcrest
     androidTestImplementation group: "org.hamcrest", name: "hamcrest-library", version: rootProject.hamcrestVersion
     debugImplementation group: "org.hamcrest", name: "hamcrest-library", version: rootProject.hamcrestVersion
+  //room database
+
+    androidTestImplementation "androidx.room:room-testing:${roomVersion}"
+    implementation "androidx.room:room-runtime:$roomVersion"
+    implementation "androidx.room:room-rxjava2:$roomVersion"
+    kapt "androidx.room:room-compiler:$roomVersion"
 
     testImplementation 'android.arch.core:core-testing:1.1.0'
     androidTestImplementation ('com.android.support.test.espresso:espresso-contrib:2.0') {
